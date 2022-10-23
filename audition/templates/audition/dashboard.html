@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'audition/partials/head.html' %}
+
+<body class="page-index">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="{% static 'audition/img/logo.png' %}" alt=""> -->
+        <h1 class="d-flex align-items-center">Emmy Movie World</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'dashboard'%}" class="active">Dashboard</a></li>
+          <li><a href="{% url 'sign_up'%}">Sign Up</a></li>
+          <li><a href="{% url 'login'%}">Login</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <h2 data-aos="fade-up">Focus On What Matters</h2>
+          <blockquote data-aos="fade-up" data-aos-delay="100">
+            <p>Bringing realities to you </p>
+          </blockquote>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+   
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'audition/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'audition/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'audition/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'audition/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'audition/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'audition/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'audition/js/main.js' %}"></script>
+
+</body>
+
+</html>
